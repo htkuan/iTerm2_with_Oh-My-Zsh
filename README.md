@@ -172,14 +172,18 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 
 # 5. install zsh-completions
 
-最後安裝命令補齊套件 zsh-completions
+最後安裝命令補齊套件 [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
-`$ brew install zsh-completions`
+## step 1: 安裝套件
+`$ brew install zsh-completions` or 
+`$ git clone git://github.com/zsh-users/zsh-completions.git`
 
+## step 2: 
 Include the directory in your $fpath, 
 
 for example by adding in ~/.zshrc: `fpath=(path/to/zsh-completions/src $fpath)`
 
+## step 3:
 You may have to force rebuild zcompdump: 
 
 `$ rm -f ~/.zcompdump; compinit`
