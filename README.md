@@ -136,37 +136,23 @@ https://github.com/mbadolato/iTerm2-Color-Schemes
 `$ exec $SHELL`
 
 ### 補:上面文章中推薦的zsh theme “powerlevel9k” (真的很潮)
+### powerlevel9k 已經棄用，改由 [powerlevel10k](https://github.com/romkatv/powerlevel10k) 接手
 
 這不是內建的 theme 要去 clone 這一包 theme 下來(在設定到ZSH_THEME)
 
-`$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
+`$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 
-修改設定檔 vim ~/.zshrc (以下是我用的設定檔)
+由於 powerlevel10k 推薦用 Meslo Nerd Font(好像有自己的 patch)
 
-#============powerlevel9k=============================
+`exec $SHELL` or `p10k configure` 他會有完整的提示互動流程幫助你設定，非常猛
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+結束後以我的觀察是，會輸出 .p10k.zsh 並且在 .zshrc 裡面做引用
 
-#顯示東西介紹 https://github.com/bhilburn/powerlevel9k
-
-#command line 左邊想顯示的內容
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ip virtualenv dir vcs status)
-
-#command line 右邊想顯示的內容
-
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs ram load time)
-
-#搭配context，若當前登入的user為DEFAULT_USER的設定值，就不顯示出來
-
-DEFAULT_USER="username"
-
-#看用什麼字型加這行可以顯示更多屌符號
-
-POWERLEVEL9K_MODE='nerdfont-complete'
-#=======================================================
-
-![7](https://github.com/htkuan/iTerm2_with_Oh-My-Zsh/blob/master/img/7.png)
+.zshrc
+```
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+```
 
 # 5. install zsh-completions
 
