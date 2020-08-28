@@ -83,8 +83,6 @@ https://github.com/mbadolato/iTerm2-Color-Schemes
 
 `$ brew cask install font-jetbrains-mono`
 
-![4](https://github.com/htkuan/iTerm2_with_Oh-My-Zsh/blob/master/img/4.png)
-
 裝完後，記得修改 iTerm2 字型設定否則不會生效。
 
 請改成 JetBrains Mono 或你自己下載的字型，
@@ -156,32 +154,6 @@ https://github.com/mbadolato/iTerm2-Color-Schemes
 
 # 5. install zsh-completions
 
-最後安裝命令補齊套件 [zsh-completions](https://github.com/zsh-users/zsh-completions)
+[https://github.com/zsh-users/zsh-completions](https://github.com/zsh-users/zsh-completions)
 
-## step 1: 安裝套件
-`$ brew install zsh-completions` or 
-`$ git clone git://github.com/zsh-users/zsh-completions.git`
-
-## step 2: 
-Include the directory in your $fpath, 
-
-for example by adding in ~/.zshrc: `fpath=(path/to/zsh-completions/src $fpath)`
-
-## step 3:
-You may have to force rebuild zcompdump: 
-
-`$ rm -f ~/.zcompdump; compinit`
-
-就完成拉！
-
-## zsh: command not found:
-
-最後通常換shell常常會有指令找不到的問題！
-
-可以在設定檔加上PATH來讀取指令(通常就是預設 .zshrc 第一二行).
-
-``` 
-#If you come from bash you might have to change your $PATH.
-#小提醒 以這邊為例 /usr/local/bin 較晚讀取，會覆蓋與 $HOME/bin 重複的指令
-export PATH=$HOME/bin:/usr/local/bin:$PATH 
-```
+本人目前覺得這個套件可有可無，所以索性不再更新這個套件
