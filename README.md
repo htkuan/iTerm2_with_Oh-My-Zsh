@@ -67,29 +67,27 @@ https://github.com/mbadolato/iTerm2-Color-Schemes
 
 ![3](https://github.com/htkuan/iTerm2_with_Oh-My-Zsh/blob/master/img/3.png)
 
-# 2. install powerline font
+# 2. install nerd font [https://www.nerdfonts.com/](https://www.nerdfonts.com/)
 
 因為我們要用的Theme會用到很多特殊的icon，所以iTerm2選用的字型必需要支援這種特殊icon字型。
 
-這類型的字體統稱為 powerline font（還有一種叫nerd font也可以)
+這類型的字體統稱為 [nerd font](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)（還有一種叫powerline font也可以,nerd 比較集大成一點)
 
 沒有選用這種字型的話，畫面遇到不支援的icon會變框框問號！
 
 先執行下面這行，才能用 homebrew 安裝字型
 
-`$ brew tap caskroom/fonts`
+`$ brew tap homebrew/cask-fonts`
 
 安裝字型(根據教學後來選用 nerd font)
 
-`$ brew cask install font-sourcecodepro-nerd-font`
-
-`$ brew cask search nerd（可以找更多nerd字型來載)`
+`$ brew cask install font-jetbrains-mono`
 
 ![4](https://github.com/htkuan/iTerm2_with_Oh-My-Zsh/blob/master/img/4.png)
 
 裝完後，記得修改 iTerm2 字型設定否則不會生效。
 
-請改成 SauceCodePro Nerd Font 或你自己下載的字型，
+請改成 JetBrains Mono 或你自己下載的字型，
 
 設定路徑：Preferences -> Profiles -> Text -> Change Font 
 
