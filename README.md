@@ -117,9 +117,9 @@ https://github.com/mbadolato/iTerm2-Color-Schemes
 
 # 4. install oh my zsh
 
-安裝 Oh My Zsh
+[安裝 Oh My Zsh](https://ohmyz.sh/)
 
-`$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+`$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
 就完成了！ 再來都是多餘的... 看過不少人也喜歡這個預設簡約的 theme
 
